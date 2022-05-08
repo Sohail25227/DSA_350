@@ -1,0 +1,13 @@
+int res(vector<int> n,int m)
+  {
+      sort(n.begin(),n.end());
+      if(m>n)
+      return -1;
+      int res=a[m-1]-a[0];
+      for(int i=1;i+m-1<n.size();i++)
+      
+      {
+          res=min(res,a[i+m-1]-a[i]);
+      }
+      return res;
+  }
